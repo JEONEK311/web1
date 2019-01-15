@@ -8,37 +8,12 @@
 
   <body>
     <h1><a href="index.html">WEB</a></h1>
-
     <input type="button" value="night" onclick="
-
-    var target =   document.querySelector('body');
-
-    if(this.value === 'night'){
-      target.style.backgroundColor = 'black';
-      target.style.color = 'white';
-      this.value = 'day';
-
-      var alist = document.querySelectorALL('a');
-      var i = 0;
-      while( i < alist.length){
-        alist[i].style.color = 'powderblue';
-        i++;
-      }
-
-    } else {
-      target.style.backgroundColor = 'white';
-      target.style.color='black';
-      this.value= 'night';
-
-      var alist = document.querySelectorALL('a');
-      var i = 0;
-      while( i < alist.length){
-        alist[i].style.color = 'blue';
-        i++;
-      }
-    }
-    ">
-
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color='white';">
+    <input type="button" value="day" onclick="
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color='black';">
       <div id="grid">
         <ol>
           <li> <a href="1.html">HTML</a></li>
@@ -47,7 +22,7 @@
         </ol>
         <div id="article">
           <h2>What is WEB ?</h2>
-          <!-- <p>Let's start to learn about WEB !</p> -->
+          <p>Let's start to learn about WEB !</p>
           <p>
             <iframe width="800" height="500" src="https://www.youtube.com/embed/7T7r_oSp0SE" frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

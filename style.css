@@ -2,8 +2,8 @@ body {
   margin:0;
 }
 a {
-  color:black;
-  text-decoration: none;
+  /* color:black;
+  text-decoration: none; */
 }
 h1 {
   font-size: 450%;
@@ -12,16 +12,20 @@ h1 {
   margin:0;
   padding:10px;
 }
-/* h2, p {
-  text-align: center;
-} */
-
 ol {
   font-weight: bold;
   border-right: 2px solid gray;
   width:180px;
   margin:0;
   padding:20px;
+}
+footer {
+  font-weight: bold;
+  font-size: 80%;
+  border-top: 2px solid gray;
+  background-color: lightgray;
+  padding-bottom: 5px;
+  text-align: center
 }
 #grid {
   display: grid;
@@ -34,6 +38,8 @@ ol {
 #article {
   padding-left:100px;
 }
+
+
 /* screen width < 1500px */
 @media(max-width:800px){
   #grid {
