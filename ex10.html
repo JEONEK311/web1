@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>object</h1>
+    <h2>create</h2>
+    <script>
+      var coworkers = {
+        "programmer":"JEKOO", "designer":"leee"
+      };
+      document.write("programmer : " + coworkers.programmer+"<br>");
+      document.write("designer : " + coworkers.designer+"<br>");
+      coworkers.bookkeeper = "duru";
+      document.write("bookkeeper : " + coworkers.bookkeeper+"<br>");
+      coworkers["data scientist"] = "tae";
+      document.write("data scientist : " + coworkers["data scientist"]+"<br>");
+    </script>
+
+    <h2>Iterate</h2>
+    <!--
+    <script>
+      //조건문에서 key값은 위의 programmer, designer, bookkeeper 등이다.
+      for(var key in coworkers) {
+        document.write(key + ' : ' + coworkers[key]+'<br>');
+      }
+    </script>
+
+    <h2>Property & Method</h2>
+    <script>
+      coworkers.showAll = function() {
+        for(var key in this) {
+          document.write(key + ' : ' + this[key]+'<br>');
+        }
+      }
+      //function showall(){}은 위와 같다.
+      coworkers.showAll();
+    </script>
+  </body>
+</html>
